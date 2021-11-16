@@ -20,7 +20,7 @@ function renderPhoto(photo){
     likeBtn.addEventListener("click", addLikes)
 
  function addLikes() {
-    likes.innerText = +photo.likes + "Likes"
+    likes.innerText = ++photo.likes + "Likes"
 }
 
 commentForm.addEventListener("submit", postComment)
